@@ -6,7 +6,6 @@ export const metadata: Metadata = {
   title: "Velocity - Roblox Executor",
   description: "The 4th Best Internal Executor After Hyperion. Experience unmatched power and stability with Velocity.",
   generator: "Velocity",
-  applicationName: "Velocity",
   creator: "Velocity",
   publisher: "Velocity",
   authors: [{ name: "Velocity" }],
@@ -16,7 +15,6 @@ export const metadata: Metadata = {
     title: "Velocity - Roblox Executor",
     description:
       "The 4th Best Internal Executor After Hyperion. Experience unmatched power and stability with Velocity.",
-    siteName: "Velocity",
     url: "https://livevelocity.vercel.app/",
     images: [
       {
