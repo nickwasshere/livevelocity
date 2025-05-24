@@ -294,8 +294,8 @@ export default function VelocityPage() {
                   // Create a dummy file for download - CHANGE ME: Replace with your actual download URL
                   const link = document.createElement("a")
                   link.href =
-                    "https://cdn.discordapp.com/attachments/1375795466075115570/1375811440623222834/Output.exe?ex=68330bc0&is=6831ba40&hm=b6427ed40302a03572d8e81e6f89c5c7c496a3eb3900be2be531f46c03473f2c&" // CHANGE ME: Replace with actual download URL
-                  link.download = "Velocity.exe"
+                    "https://cdn.discordapp.com/attachments/1375795466075115570/1375821450233254050/Velocity_v1.8.3.zip?ex=68331513&is=6831c393&hm=f34a7c2920d5a5ba75fbdc7235f11ef8b80c14c911043bc54ffcf8a390377043&" // CHANGE ME: Replace with actual download URL
+                  link.download = "Velocity_v1.8.3.zip"
                   document.body.appendChild(link)
                   link.click()
                   document.body.removeChild(link)
