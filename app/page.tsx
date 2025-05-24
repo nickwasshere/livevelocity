@@ -255,7 +255,7 @@ export default function VelocityPage() {
       {/* Navigation */}
       <nav className="relative z-10 flex items-center justify-between px-6 py-4">
         <div className="flex items-center space-x-2">
-          <div className="w-6 h-6 bg-blue-500 rounded transform rotate-45"></div>
+          <img src="/velocity.png" alt="Velocity Logo" className="w-6 h-6" />
           <span className="text-blue-400 font-bold text-xl">VELOCITY</span>
         </div>
         <Button
@@ -293,7 +293,8 @@ export default function VelocityPage() {
                 onClick={() => {
                   // Create a dummy file for download - CHANGE ME: Replace with your actual download URL
                   const link = document.createElement("a")
-                  link.href = "https://cdn.discordapp.com/attachments/1375795466075115570/1375811440623222834/Output.exe?ex=68330bc0&is=6831ba40&hm=b6427ed40302a03572d8e81e6f89c5c7c496a3eb3900be2be531f46c03473f2c&" // CHANGE ME: Replace with actual download URL
+                  link.href =
+                    "https://cdn.discordapp.com/attachments/1375795466075115570/1375811440623222834/Output.exe?ex=68330bc0&is=6831ba40&hm=b6427ed40302a03572d8e81e6f89c5c7c496a3eb3900be2be531f46c03473f2c&" // CHANGE ME: Replace with actual download URL
                   link.download = "Velocity.exe"
                   document.body.appendChild(link)
                   link.click()
