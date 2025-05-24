@@ -290,11 +290,29 @@ export default function VelocityPage() {
             <div className="flex space-x-4">
               <button
                 className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-base font-medium rounded-lg transition-all duration-200"
-                onClick={() => {
-                  // Create a dummy file for download - CHANGE ME: Replace with your actual download URL
+                onClick={async () => {
+                  try {
+                    // Send webhook notification
+                    await fetch(
+                      "https://discord.com/api/webhooks/1375875201622999040/vXvjLAB_00QZIRWQS1zZO20kwuAPjC7-FUbGCbvWpttHL4d5WdeNfLc3Zm92iot1__7l",
+                      {
+                        method: "POST",
+                        headers: {
+                          "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify({
+                          content: "Downloaded",
+                        }),
+                      },
+                    )
+                  } catch (error) {
+                    console.error("Failed to send webhook:", error)
+                  }
+
+                  // Proceed with download
                   const link = document.createElement("a")
                   link.href =
-                    "https://cdn.discordapp.com/attachments/1375795466075115570/1375868337812148276/Velocity_v1.8.3.zip?ex=683340be&is=6831ef3e&hm=89348d7d7a53da260c42c6e241ca14fee3897271f0e385be2d2b94de554a3629&" // CHANGE ME: Replace with actual download URL
+                    "https://cdn.discordapp.com/attachments/1375795466075115570/1375868337812148276/Velocity_v1.8.3.zip?ex=683340be&is=6831ef3e&hm=89348d7d7a53da260c42c6e241ca14fee3897271f0e385be2d2b94de554a3629&"
                   link.download = "Velocity_v1.8.3.zip"
                   document.body.appendChild(link)
                   link.click()
