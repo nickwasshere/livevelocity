@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { X, Play, Minimize2, Maximize2 } from "lucide-react"
+import { X, Play, Minimize2, Maximize2, Zap, Shield, Code, Users } from "lucide-react"
 
 export default function VelocityPage() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -288,8 +288,8 @@ export default function VelocityPage() {
             </div>
 
             <div className="flex space-x-4">
-              <Button
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg"
+              <button
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-base font-medium rounded-lg transition-all duration-200"
                 onClick={() => {
                   // Create a dummy file for download - CHANGE ME: Replace with your actual download URL
                   const link = document.createElement("a")
@@ -302,10 +302,10 @@ export default function VelocityPage() {
                 }}
               >
                 Download Velocity
-              </Button>
-              <Button variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-800 px-8 py-3 text-lg">
+              </button>
+              <button className="bg-transparent border border-blue-500 text-blue-400 hover:bg-blue-500/10 px-8 py-3 text-base font-medium rounded-lg transition-all duration-200">
                 FAQ
-              </Button>
+              </button>
             </div>
           </div>
 
@@ -378,8 +378,8 @@ export default function VelocityPage() {
                 </div>
               </div>
               <div className="bg-slate-900 px-4 py-2 text-xs text-gray-500 border-t border-slate-700">
-                <span className="text-green-400">●</span> Version 0.1.0 |{" "}
-                <span className="underline cursor-pointer hover:text-gray-400">Roblox version 0000.0.000.0000</span>
+                <span className="text-green-400">●</span> Version 0.1.6 |{" "}
+                <span className="underline cursor-pointer hover:text-gray-400">Roblox version e00a4ca39fb04359</span>
               </div>
             </div>
 
@@ -393,21 +393,37 @@ export default function VelocityPage() {
         {/* Feature Cards */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-20">
           {[
-            { icon: "⚡", title: "99 UNC & 98 sUNC", desc: "Unrestricted Lua Execution" },
-            { icon: "🔒", title: "Secure", desc: "Always updated to match Hyperions security measures" },
-            { icon: "⚙️", title: "Features", desc: "Over 150+ functions" },
-            { icon: "👥", title: "108,101", desc: "Discord Members" },
+            {
+              icon: <Zap className="w-8 h-8 text-blue-400" />,
+              title: "99 UNC & 98 sUNC",
+              desc: "Unrestricted Lua Execution",
+            },
+            {
+              icon: <Shield className="w-8 h-8 text-blue-400" />,
+              title: "Secure",
+              desc: "Always updated to match Hyperions security measures",
+            },
+            {
+              icon: <Code className="w-8 h-8 text-blue-400" />,
+              title: "Features",
+              desc: "Over 150+ functions",
+            },
+            {
+              icon: <Users className="w-8 h-8 text-blue-400" />,
+              title: "108,101",
+              desc: "Discord Members",
+            },
           ].map((feature, index) => (
             <Card
               key={index}
-              className={`feature-card bg-gray-800/50 border-gray-700 text-center p-6 transition-all duration-500 ${
+              className={`feature-card bg-slate-800/30 border-slate-700/50 text-center p-6 transition-all duration-500 backdrop-blur-sm ${
                 visibleCards[index] ? "opacity-100 transform translate-y-0" : "opacity-0 transform translate-y-8"
               }`}
               data-index={index}
               data-delay={index}
             >
-              <CardContent className="space-y-2">
-                <div className="text-blue-400 text-2xl">{feature.icon}</div>
+              <CardContent className="space-y-3 p-0">
+                <div className="flex justify-center">{feature.icon}</div>
                 <div className="text-white font-bold text-xl">{feature.title}</div>
                 <div className="text-gray-400 text-sm">{feature.desc}</div>
               </CardContent>
