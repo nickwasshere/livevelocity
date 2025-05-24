@@ -10,28 +10,13 @@ export const metadata: Metadata = {
   publisher: "Velocity",
   authors: [{ name: "Velocity" }],
   keywords: ["Velocity", "executor", "Roblox", "script", "internal"],
-  openGraph: {
-    type: "website",
-    title: "Velocity - Roblox Executor",
-    description:
-      "The 4th Best Internal Executor After Hyperion. Experience unmatched power and stability with Velocity.",
-    url: "https://livevelocity.vercel.app/",
-    images: [
-      {
-        url: "/velocity.png",
-        width: 512,
-        height: 512,
-        alt: "Velocity Logo",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary",
-    title: "Velocity - Roblox Executor",
-    description:
-      "The 4th Best Internal Executor After Hyperion. Experience unmatched power and stability with Velocity.",
-    creator: "@Velocity",
-    images: ["/velocity.png"],
+  robots: {
+    index: true,
+    follow: true,
+    noarchive: true,
+    nosnippet: true,
+    noimageindex: true,
+    nocache: true,
   },
   icons: {
     icon: "/velocity.png",
@@ -47,6 +32,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:type" content="" />
+        <meta property="og:site_name" content="" />
+        <meta name="twitter:card" content="" />
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:description" content="" />
+        <meta name="twitter:image" content="" />
+        <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
+      </head>
       <body>{children}</body>
     </html>
   )
