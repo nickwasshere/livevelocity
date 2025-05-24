@@ -310,53 +310,76 @@ export default function VelocityPage() {
           </div>
 
           {/* Right Content - Code Editor */}
-          <div className="bg-gray-900 rounded-lg border border-gray-700 overflow-hidden" id="editor-area">
+          <div className="bg-slate-800 rounded-lg border border-slate-600 overflow-hidden shadow-2xl" id="editor-area">
             {/* Editor Header */}
-            <div className="bg-gray-800 px-4 py-2 flex items-center justify-between border-b border-gray-700">
-              <div className="flex items-center space-x-2">
-                <span className="text-gray-400 text-sm">Script 1</span>
-                <X className="w-4 h-4 text-gray-500" />
-                <span className="text-gray-500">+</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <button
-                  id="minimize-btn"
-                  onClick={() => setIsMinimized(!isMinimized)}
-                  className="hover:bg-gray-700 p-1 rounded"
-                >
-                  <Minimize2 className="w-4 h-4 text-gray-500" />
+            <div className="bg-slate-900 px-4 py-2 flex items-center justify-between border-b border-slate-600">
+              <div className="flex items-center space-x-1">
+                <div className="flex items-center bg-slate-700 rounded px-3 py-1">
+                  <span className="text-gray-300 text-sm">Script 1</span>
+                  <X className="w-3 h-3 text-gray-400 ml-2 hover:text-white cursor-pointer" />
+                </div>
+                <button className="text-gray-400 hover:text-white px-2">
+                  <span className="text-lg">+</span>
                 </button>
-                <Maximize2 className="w-4 h-4 text-gray-500" />
-                <X className="w-4 h-4 text-gray-500" />
+              </div>
+              <div className="flex items-center space-x-1">
+                <button className="hover:bg-slate-700 p-1 rounded">
+                  <div className="w-3 h-3 rounded-full bg-gray-500"></div>
+                </button>
+                <button onClick={() => setIsMinimized(!isMinimized)} className="hover:bg-slate-700 p-1 rounded">
+                  <Minimize2 className="w-3 h-3 text-gray-400" />
+                </button>
+                <button className="hover:bg-slate-700 p-1 rounded">
+                  <Maximize2 className="w-3 h-3 text-gray-400" />
+                </button>
+                <button className="hover:bg-slate-700 p-1 rounded">
+                  <X className="w-3 h-3 text-gray-400" />
+                </button>
               </div>
             </div>
 
             {/* Editor Content */}
             <div id="editor-content" className={isMinimized ? "hidden" : "block"}>
-              <div className="p-4 font-mono text-sm">
+              <div className="p-6 font-mono text-sm min-h-[200px] bg-slate-800">
                 <div ref={codeRef} id="code-content" className="text-blue-400">
                   <span className="text-blue-400">print</span>
                   <span className="text-white">(</span>
                   <span className="text-green-400">"{typedCode.includes('"') ? typedCode.split('"')[1] : ""}"</span>
                   <span className="text-white">{typedCode.includes(")") ? ")" : ""}</span>
-                  {typedCode.length < 22 && <span className="animate-pulse">|</span>}
+                  {typedCode.length < 22 && <span className="animate-pulse text-white">|</span>}
                 </div>
               </div>
 
               {/* Editor Footer */}
-              <div className="bg-gray-800 px-4 py-2 flex items-center justify-between border-t border-gray-700 text-xs text-gray-500">
-                <div className="flex items-center space-x-4">
-                  <span>▶ Execute</span>
-                  <span>📋 Clear</span>
-                  <span>📂 Open</span>
-                  <span>💾 Save</span>
+              <div className="bg-slate-900 px-4 py-3 flex items-center justify-between border-t border-slate-600">
+                <div className="flex items-center space-x-6">
+                  <button className="flex items-center space-x-1 text-gray-300 hover:text-white text-sm">
+                    <span>▶</span>
+                    <span>Execute</span>
+                  </button>
+                  <button className="flex items-center space-x-1 text-gray-300 hover:text-white text-sm">
+                    <span>📋</span>
+                    <span>Clear</span>
+                  </button>
+                  <button className="flex items-center space-x-1 text-gray-300 hover:text-white text-sm">
+                    <span>📂</span>
+                    <span>Open</span>
+                  </button>
+                  <button className="flex items-center space-x-1 text-gray-300 hover:text-white text-sm">
+                    <span>💾</span>
+                    <span>Save</span>
+                  </button>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <span>⚡ Inject</span>
+                  <button className="flex items-center space-x-1 text-blue-400 hover:text-blue-300 text-sm">
+                    <span>⚡</span>
+                    <span>Inject</span>
+                  </button>
                 </div>
               </div>
-              <div className="bg-gray-900 px-4 py-1 text-xs text-gray-600">
-                Version 0.1.0 | Roblox version 0.000.0.000.0000
+              <div className="bg-slate-900 px-4 py-2 text-xs text-gray-500 border-t border-slate-700">
+                <span className="text-green-400">●</span> Version 0.1.0 |{" "}
+                <span className="underline cursor-pointer hover:text-gray-400">Roblox version 0000.0.000.0000</span>
               </div>
             </div>
 
