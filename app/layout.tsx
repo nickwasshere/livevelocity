@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: "Velocity",
   description: "Velocity executer",
   generator: "Velocity executer",
+  icons: {
+    icon: "/velocity.png",
+    shortcut: "/velocity.png",
+    apple: "/velocity.png",
+  },
 }
 
 export default function RootLayout({
