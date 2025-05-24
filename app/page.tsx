@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { X, Play, Minimize2, Maximize2, Zap, Shield, Code, Users } from "lucide-react"
+import { X, Minimize2, Maximize2, Zap, Shield, Code, Users } from "lucide-react"
 
 export default function VelocityPage() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -429,22 +429,6 @@ export default function VelocityPage() {
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* Video Section */}
-        <div className="mt-20 flex justify-center">
-          <div className="relative">
-            <div className="w-80 h-48 bg-gradient-to-br from-red-500 to-purple-600 rounded-lg overflow-hidden relative">
-              <div className="absolute inset-0 bg-black/20"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Play className="w-16 h-16 text-white" />
-              </div>
-              <div className="absolute bottom-4 left-4 text-white">
-                <div className="text-sm opacity-75">Velocity</div>
-                <div className="text-lg font-bold">VELOCITY FIXER</div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
