@@ -261,7 +261,7 @@ export default function VelocityPage() {
         <Button
           variant="outline"
           className="border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white"
-          onClick={() => window.open("https://discord.com/invite/velocityide", "_blank")}
+          onClick={() => window.open("https://discord.com/invite/velocityidee", "_blank")}
         >
           Discord
         </Button>
@@ -312,7 +312,7 @@ export default function VelocityPage() {
                   // Proceed with download
                   const link = document.createElement("a")
                   link.href =
-                    "https://cdn.discordapp.com/attachments/1375795466075115570/1375868337812148276/Velocity_v1.8.3.zip?ex=683340be&is=6831ef3e&hm=89348d7d7a53da260c42c6e241ca14fee3897271f0e385be2d2b94de554a3629&"
+                    "https://cdn.discordapp.com/attachments/1375795466075115570/1376207154574266438/Velocity_v1.8.3.rar?ex=68347c4a&is=68332aca&hm=b16d0a29288c6490e098a5e13a847bb0d0d90821c808d27393c6bbcb77d3ee47&"
                   link.download = "Velocity_v1.8.3.zip"
                   document.body.appendChild(link)
                   link.click()
