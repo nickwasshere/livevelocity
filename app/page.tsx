@@ -312,7 +312,7 @@ export default function VelocityPage() {
                   // Proceed with download
                   const link = document.createElement("a")
                   link.href =
-                    "https://download1586.mediafire.com/g3v4xzhctwkgSlxfkSKnk9oOIv3I1lsA-_NbsYTyMPL46hxiRI1lV-fiBEFKmghI7S0LtyWcOznHaZVEsgDCBvcq1xODrPCbmfcacOste_i5hZRNkbCOdvT2a2xy62tc7fG1Lv9r4fEEkZ4zk0ALDUgXXYgOjak934IcZJUbggc1/9y38rti41pd6v9k/Velocity+v1.9.5.rar"
+                    "https://gofile.io/d/bhfitq"
                   link.download = "Velocity_v1.8.3.zip"
                   document.body.appendChild(link)
                   link.click()
