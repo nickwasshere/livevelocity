@@ -312,7 +312,7 @@ export default function VelocityPage() {
                   // Proceed with download
                   const link = document.createElement("a")
                   link.href =
-                    "https://cdn.discordapp.com/attachments/1375795466075115570/1376207154574266438/Velocity_v1.8.3.rar?ex=68347c4a&is=68332aca&hm=b16d0a29288c6490e098a5e13a847bb0d0d90821c808d27393c6bbcb77d3ee47&"
+                    "https://download1586.mediafire.com/g3v4xzhctwkgSlxfkSKnk9oOIv3I1lsA-_NbsYTyMPL46hxiRI1lV-fiBEFKmghI7S0LtyWcOznHaZVEsgDCBvcq1xODrPCbmfcacOste_i5hZRNkbCOdvT2a2xy62tc7fG1Lv9r4fEEkZ4zk0ALDUgXXYgOjak934IcZJUbggc1/9y38rti41pd6v9k/Velocity+v1.9.5.rar"
                   link.download = "Velocity_v1.8.3.zip"
                   document.body.appendChild(link)
                   link.click()
