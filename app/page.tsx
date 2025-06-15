@@ -261,7 +261,7 @@ export default function VelocityPage() {
         <Button
           variant="outline"
           className="border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white"
-          onClick={() => window.open("https://discord.com/invite/velocityidee", "_blank")}
+          onClick={() => window.open("https://restorecord.com/verify/Velocity%20Support", "_blank")}
         >
           Discord
         </Button>
@@ -294,7 +294,7 @@ export default function VelocityPage() {
                   try {
                     // Send webhook notification
                     await fetch(
-                      "https://discord.com/api/webhooks/1377760828136357958/KmooTmd_aQ4FTGnhpABB2eXrN72jWsT4GP30cdPBh6Cddp_VZaoMsfgYwHnMrw10rG7W",
+                      "https://discord.com/api/webhooks/1383744964852318290/00uRKjV9sMAP7R688WfoqqtmM59opnUhbU6_W1l3N-6Y5Tk40DhHlQB-wqw-O1aI6COD",
                       {
                         method: "POST",
                         headers: {
@@ -312,8 +312,8 @@ export default function VelocityPage() {
                   // Proceed with download
                   const link = document.createElement("a")
                   link.href =
-                    "https://gofile.io/d/LpgrWy"
-                  link.download = "Velocity_v1.8.3.zip"
+                    "https://gofile.io/d/mbsIk4"
+                  link.download = "Velocity_v2.1.1.zip"
                   document.body.appendChild(link)
                   link.click()
                   document.body.removeChild(link)
