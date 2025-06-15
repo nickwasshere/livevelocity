@@ -3,31 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --bg-primary: #0f1729;
-  --bg-secondary: #0a0e1a;
-  --bg-editor: #0d1117;
-  --bg-header: #161b22;
-  --bg-button: #1c2129;
-  --bg-button-hover: #252c38;
-  --text-primary: #ffffff;
-  --text-secondary: #a0aec0;
-  --accent-primary: #3b82f6;
-  --accent-secondary: #60a5fa;
-  --border-color: #1f2937;
-  --code-function: #3b82f6;
-  --code-string: #10b981;
-  --code-paren: #ffffff;
+  --bg-primary: #101010;
+  --bg-secondary: #101010;
+  --bg-editor: #101010;
+  --bg-header: #101010;
+  --bg-button: #101010;
+  --bg-button-hover: #101010;
+  --text-primary: #101010;
+  --text-secondary: #101010;
+  --accent-primary: #101010;
+  --accent-secondary: #101010;
+  --border-color: #101010;
+  --code-function: #101010;
+  --code-string: #101010;
+  --code-paren: #101010;
 }
 
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: var(--text-primary);
-  background: linear-gradient(to bottom right, var(--bg-primary), var(--bg-secondary)), url("/network-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background: #000000;
+  color: #ffffff;
   min-height: 100vh;
 }
 

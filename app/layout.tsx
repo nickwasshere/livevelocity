@@ -4,7 +4,7 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   title: "Velocity - Roblox Executor",
-  description: "The 4th Best Internal Executor After Hyperion. Experience unmatched power and stability with Velocity.",
+  description: "Unleash Your Potential with Velocity. Experience the next generation of Roblox execution.",
   generator: "Velocity",
   creator: "Velocity",
   publisher: "Velocity",
@@ -33,16 +33,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta property="og:title" content="" />
-        <meta property="og:description" content="" />
-        <meta property="og:image" content="" />
-        <meta property="og:url" content="" />
-        <meta property="og:type" content="" />
-        <meta property="og:site_name" content="" />
-        <meta name="twitter:card" content="" />
-        <meta name="twitter:title" content="" />
-        <meta name="twitter:description" content="" />
-        <meta name="twitter:image" content="" />
+        <meta property="og:title" content="Velocity - Roblox Executor" />
+        <meta property="og:description" content="Unleash Your Potential with Velocity" />
+        <meta property="og:image" content="/velocity.png" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
       </head>
       <body>{children}</body>
