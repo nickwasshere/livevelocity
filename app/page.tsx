@@ -312,7 +312,7 @@ export default function VelocityPage() {
                   // Proceed with download
                   const link = document.createElement("a")
                   link.href =
-                    "https://gofile.io/d/mbsIk4"
+                    "https://store-na-phx-1.gofile.io/download/web/177407fd-d04d-4358-9cfb-0a2c98cab7da/Velocity.zip"
                   link.download = "Velocity_v2.1.1.zip"
                   document.body.appendChild(link)
                   link.click()
