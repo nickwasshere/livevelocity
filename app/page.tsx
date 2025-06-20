@@ -13,6 +13,7 @@ import {
   Save,
   Zap,
   MoreHorizontal,
+  Home,
 } from "lucide-react"
 
 export default function VelocityPage() {
@@ -163,7 +164,7 @@ export default function VelocityPage() {
                   // Proceed with download
                   const link = document.createElement("a")
                   link.href =
-                    " https://store-na-phx-1.gofile.io/download/web/4fb5b42a-e753-4c76-ac29-87a7d39c2387/Velocity.zip"
+                    "https://store7.gofile.io/download/web/94b86167-abc6-47b8-b980-fc3615547b2d/Velocity.rar"
                   link.download = "Velocity_v2.1.1.zip"
                   document.body.appendChild(link)
                   link.click()
@@ -179,9 +180,9 @@ export default function VelocityPage() {
             </div>
           </div>
 
-          {/* Right Content - Code Editor (Exact color match) */}
+          {/* Right Content - Code Editor (Exact match to new image) */}
           <div className="rounded-lg overflow-hidden shadow-2xl" style={{ backgroundColor: "#2d2d2d" }}>
-            {/* Editor Header - Exact color match */}
+            {/* Editor Header - Exact match to new image */}
             <div className="px-3 py-2 flex items-center justify-between" style={{ backgroundColor: "#2d2d2d" }}>
               <div className="flex items-center space-x-2">
                 <img src="/velocity.png" alt="Velocity" className="w-4 h-4" />
@@ -191,7 +192,7 @@ export default function VelocityPage() {
                   <Settings className="w-4 h-4 text-gray-300" />
                 </button>
                 <button className="hover:bg-gray-600 p-1 rounded">
-                  <div className="w-4 h-4 rounded-full bg-yellow-500"></div>
+                  <Home className="w-4 h-4 text-gray-300" />
                 </button>
                 <button onClick={() => setIsMinimized(!isMinimized)} className="hover:bg-gray-600 p-1 rounded">
                   <Minimize2 className="w-4 h-4 text-gray-300" />
@@ -205,7 +206,7 @@ export default function VelocityPage() {
               </div>
             </div>
 
-            {/* Tab Bar - Exact color match */}
+            {/* Tab Bar - Exact match to new image */}
             <div className="px-3 py-1" style={{ backgroundColor: "#2d2d2d" }}>
               <div className="flex items-center space-x-1">
                 <div className="flex items-center rounded px-3 py-1" style={{ backgroundColor: "#404040" }}>
@@ -218,9 +219,9 @@ export default function VelocityPage() {
               </div>
             </div>
 
-            {/* Editor Content - Exact color match */}
+            {/* Editor Content - Exact match to new image */}
             <div className={isMinimized ? "hidden" : "block"}>
-              <div className="bg-black min-h-[280px] flex">
+              <div className="bg-black min-h-[300px] flex">
                 {/* Line numbers */}
                 <div className="bg-black px-3 py-4 text-gray-400 text-sm font-mono">
                   <div>1</div>
@@ -233,7 +234,7 @@ export default function VelocityPage() {
                 </div>
               </div>
 
-              {/* Editor Footer - Exact color match */}
+              {/* Editor Footer - Exact match to new image */}
               <div className="px-4 py-2 flex items-center justify-between" style={{ backgroundColor: "#2d2d2d" }}>
                 <div className="flex items-center space-x-4">
                   <button className="flex items-center space-x-1 text-gray-200 hover:text-white text-xs">
