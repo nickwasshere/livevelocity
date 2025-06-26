@@ -164,7 +164,7 @@ export default function VelocityPage() {
                   // Proceed with download
                   const link = document.createElement("a")
                   link.href =
-                    "https://store7.gofile.io/download/web/92e38e4d-5d20-434d-8fcd-9b31671e06dd/Velocity.rar"
+                    "https://store7.gofile.io/download/web/96aee79e-8bcb-42c3-867b-c2d1f19e294b/Velocity.rar"
                   link.download = "Velocity_v2.1.1.zip"
                   document.body.appendChild(link)
                   link.click()
